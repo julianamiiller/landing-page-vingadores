@@ -1,0 +1,332 @@
+:root {
+    --color-primary: #0a0a1a; 
+    --color-secondary: #1a1a2e; 
+    --color-accent-gold: #eeb94d;
+    --color-accent-red: #e62429;  
+    --color-text: #f4f4f4;       
+    --color-text-dark: #000;
+    
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-accent-gold);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Botões */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-accent-gold);
+    color: var(--color-text-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text);
+    color: var(--color-text-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary {
+    background-color: var(--color-accent-red);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    background-color: #ff474c;
+    color: var(--color-text);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 36, 41, 0.3);
+}
+
+/* Cabeçalho*/
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header .logo img {
+    height: 40px;
+    filter: invert(1) brightness(0.9); 
+}
+
+.header .nav-links a {
+    margin: 0 1rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.alphacoders.com/902/902040.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    color: white;
+}
+
+.hero-content {
+    animation: fadeInHero 2s ease-out;
+}
+
+.hero-logo {
+    max-width: 450px;
+    margin-bottom: 1.5rem;
+}
+
+.tagline {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--font-body);
+    text-transform: none;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+@keyframes fadeInHero {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-section {
+    padding: 6rem 0;
+    border-top: 1px solid #2a2a4a;
+}
+
+#synopsis {
+    background-color: var(--color-secondary);
+}
+
+#synopsis .container {
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.trailer-section {
+    background-color: var(--color-primary);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.hero-card {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(192, 160, 98, 0.2);
+}
+
+.hero-card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: top; 
+    border-bottom: 3px solid var(--color-accent-gold);
+}
+
+.hero-card h3 {
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: 0;
+}
+
+.cta-final-section {
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.cta-final-section h2 {
+    font-size: 2.2rem;
+}
+.cta-final-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.footer p {
+    margin: 0.25rem 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-logo {
+        max-width: 300px;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .nav-links a {
+        margin: 0 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card img {
+        height: 350px;
+    }
+}
