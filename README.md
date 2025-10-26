@@ -8,12 +8,6 @@ O projeto foi desenvolvido com foco em **responsividade**, **design moderno** e 
 ## 🌐 Demonstração  
 
 🔗 **[Acesse o projeto aqui](https://vingadores-ultimato.netlify.app/)**  
-*(Se ainda não tiver publicado no GitHub Pages, posso te ensinar como fazer — leva menos de 2 minutos!)*  
-
-📸 **Prévia do projeto:**  
-*(adicione aqui um print da página inicial, por exemplo `img/preview.png`)*  
-
----
 
 ## 🧠 Objetivo do Projeto  
 
@@ -35,6 +29,3 @@ O objetivo deste projeto é consolidar os conhecimentos adquiridos em **HTML e C
 | **Git/GitHub** | Controle de versão e hospedagem |
 
 ---
-
-## 📂 Estrutura de Arquivos  
-
