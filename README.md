@@ -38,6 +38,6 @@ O objetivo deste projeto é consolidar os conhecimentos adquiridos em **HTML e C
    
 
 👩‍💻 Autora - Juliana Miiller
-💼 Desenvolvedora Front-End em formação
+💼 Desenvolvedora em formação
 💌 Projeto criado com foco em aprendizado e portfólio pessoal.
 
