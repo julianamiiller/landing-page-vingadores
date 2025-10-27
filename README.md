@@ -29,3 +29,15 @@ O objetivo deste projeto é consolidar os conhecimentos adquiridos em **HTML e C
 | **Git/GitHub** | Controle de versão e hospedagem |
 
 ---
+
+## 🚀 Como Visualizar  
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/julianamiiller/landing-page-vingadores.git
+   
+
+👩‍💻 Autora - Juliana Miiller
+💼 Desenvolvedora Front-End em formação
+💌 Projeto criado com foco em aprendizado e portfólio pessoal.
+
